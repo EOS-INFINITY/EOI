@@ -1,24 +1,15 @@
-/*EOS INFINITY is a fast-speed cross-chain forked coin from the EOS development 
-team from Johannes and the data analyst Elaine who has participated in the 
-etheric classic fork and the blockchain technology madman Yolanda.EOS INFINITY,
-which puts security, stability, and scalability at the forefront, is committed 
-to creating an evolving, easy-to-use, low-cost solution by introducing modular 
-virtual machines, smart sandboxes, value exchanges, and forks. A moderately 
-customized blockchain network.*/
-/*********************************************************************************/
-
-pragma solidity ^0.4.20;
-contract SafeMath {
-  function safeMul(uint256 a, uint256 b) public pure  returns (uint256)  {
-    uint256 c = a * b;
-    assert(a == 0 || c / a == b);
-    return c;
-  }
-
-  function safeDiv(uint256 a, uint256 b)public pure returns (uint256) {
-    assert(b > 0);
-    uint256 c = a / b;
-    assert(a == b * c + a % b);
+pragma solidity ^0.4.20;                                                      /*EOS INFINITY is a fast-speed cross-chain
+contract SafeMath {                                                           forked coin from the EOS development team
+  function safeMul(uint256 a, uint256 b) public pure  returns (uint256)  {    from Johannes and the data analyst Elaine 
+    uint256 c = a * b;                                                        who has participated in the etheric classic 
+    assert(a == 0 || c / a == b);                                             fork and the blockchain technology madman 
+    return c;                                                                 Yolanda.EOS INFINITY,which puts security, 
+  }                                                                           stability,and scalability at the forefront,
+                                                                              is committed to creating an evolving, easy-to-use,
+  function safeDiv(uint256 a, uint256 b)public pure returns (uint256) {       low-cost solution by introducing modular 
+    assert(b > 0);                                                            virtual machines, smart sandboxes, 
+    uint256 c = a / b;                                                        value exchanges,and forks. A moderately 
+    assert(a == b * c + a % b);                                               customized blockchain network.*/
     return c;
   }
 
